@@ -2,8 +2,10 @@
 <meta charset="UTF-8">
 <html lang="zh-cmn-Hans">
 <head>
+    <!-- 修改引入顺序需谨慎 -->
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/materialize.min.js"></script>
 
     <!--页面标题-->
@@ -52,9 +54,9 @@
     <div class="center">
         <a class="btn">全选</a>
         <a class="btn" style="margin-right: 60px;">全不选</a>
-        <a class="btn" href="#sell_modal" >出售</a>
-        <a class="btn">租借</a>
-        <a class="btn">归还</a>
+        <a class="btn modal-trigger" href="#sell_modal">出售</a>
+        <a class="btn  modal-trigger" href="#lend_modal">租借</a>
+        <a class="btn  modal-trigger" href="#return_modal">归还</a>
     </div>
     <table class="highlight responsive-table">
         <thead>
@@ -121,13 +123,37 @@
             <a class="modal-close waves-effect waves-green btn-flat">确定</a>
         </div>
     </div>
+
+    <!--租借 模态框-->
+    <div id="lend_modal" class="modal">
+        <div class="modal-content">
+            <h4>租借</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat">取消</a>
+            <a class="modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+
+    <!--归还 模态框-->
+    <div id="return_modal" class="modal">
+        <div class="modal-content">
+            <h4>归还</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat">取消</a>
+            <a class="modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+
 </div>
 </body>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems, options);
+    $(document).ready(function () {
+        $('.modal').modal();
     });
 </script>
 
