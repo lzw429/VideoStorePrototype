@@ -1,0 +1,103 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" type='text/css' href="css/materialize.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- 自定义css -->
+    <style type="text/css">
+        .s6 {
+            height: 200px;
+        }
+    </style>
+
+    <!--页面标题-->
+    <title>管理 - VideoStore Pro</title>
+</head>
+<!-- Navigation bar -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s9">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+<div class="row">
+
+    <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <div class="collection" style="margin-top: 25px;">
+            <a href="ShopManager1st.html" class="collection-item">数据统计</a>
+            <a href="ShopManager2nd.html" class="collection-item">用户需求</a>
+            <a href="ShopManager3rd.html" class="collection-item active">进货管理</a>
+            <a href="ShopManager4th.html" class="collection-item">信息检索</a>
+        </div>
+    </div>
+
+    <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+        <h4>进货管理</h4>
+
+        <div class="modal-content">
+            <table class="centered">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+</script>
+</html>
