@@ -67,6 +67,7 @@
             <th>类型</th>
             <th>售价</th>
             <th>租价</th>
+            <th>数量</th>
         </tr>
         </thead>
         <tbody>
@@ -79,9 +80,24 @@
             </td>
             <td>G201809488</td>
             <td>古剑奇谭</td>
-            <td>游戏</td>
+            <td><i class="material-icons">videogame_asset</i></td>
             <td>¥ 19.00</td>
             <td>¥ 0.80 / 天</td>
+            <td>
+                <label>
+                    <select class="browser-default">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </label>
+            </td>
         </tr>
         <tr>
             <td>
@@ -92,9 +108,24 @@
             </td>
             <td>M201614199</td>
             <td>广陵散</td>
-            <td>音乐</td>
+            <td><i class="material-icons">music_note</i></td>
             <td>¥ 3.00</td>
             <td>¥ 0.40 / 天</td>
+            <td>
+                <label>
+                    <select class="browser-default">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </label>
+            </td>
         </tr>
         <tr>
             <td>
@@ -105,9 +136,24 @@
             </td>
             <td>V201710288</td>
             <td>东方帝王谷</td>
-            <td>视频</td>
+            <td><i class="material-icons">ondemand_video</i></td>
             <td>¥ 25.00</td>
             <td>¥ 1.20 / 天</td>
+            <td>
+                <label>
+                    <select class="browser-default">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </label>
+            </td>
         </tr>
         </tbody>
     </table>
@@ -115,8 +161,38 @@
     <!--出售 模态框-->
     <div id="sell_modal" class="modal">
         <div class="modal-content">
-            <h4>出售</h4>
-            <p>A bunch of text</p>
+            <h4>购买订单</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>G201809488</td>
+                    <td>古剑奇谭</td>
+                    <td>¥ 19.00</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>M201614199</td>
+                    <td>广陵散</td>
+                    <td>¥ 3.00</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>V201710288</td>
+                    <td>东方帝王谷</td>
+                    <td>¥ 25.00</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5>总额：¥ 66.00</h5>
         </div>
         <div class="modal-footer">
             <a class="modal-close waves-effect waves-green btn-flat">取消</a>
