@@ -1,0 +1,136 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/materialize.min.js"></script>
+
+    <!--页面标题-->
+    <title>搜索 - VideoStore Pro</title>
+</head>
+
+<body>
+<!-- 导航栏 -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s3">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons"
+                           style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<!--页面内容 两栏布局-->
+<div class="row">
+    <div id="side" style=" margin-top: 7px; padding-left: 15px; float: left; width: 300px;">
+        <!--页面左侧-->
+        <form action="#">
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>游戏</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>音乐</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>视频</span>
+                </label>
+            </p>
+        </form>
+    </div>
+
+    <div id="main" style=" margin-top: 3px; padding-left: 5px; float:left; width: 74.6%; ">
+        <!--页面右侧-->
+        <p style="margin-left: 10px;">找到约 148 条结果</p>
+        <div class="col s12 m7">
+            <div class="card horizontal">
+                <div class="card-image" style="margin: 22px;">
+                    <img src="img/item.jpg" height="190" width="100"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h5 style="margin-top: 0;">广陵散</h5>
+                        <p class="grey-text">音乐</p>
+                        <p>古琴曲名，又名广陵止息。相传是东汉末年流行于广陵（今江苏扬州）的民间乐曲，当时用琴、筝、笙、筑等乐器演奏。</p>
+                    </div>
+                    <div class="card-action">
+                        <a>预约</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m7">
+            <div class="card horizontal">
+                <div class="card-image" style="margin: 22px;">
+                    <img src="img/item1.jpg" height="190" width="100"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h5 style="margin-top: 0;">古剑奇谭</h5>
+                        <p class="grey-text">游戏</p>
+                        <p>
+                            《古剑奇谭》的世界中，有爱有恨，有喜悦也有悲伤，有如诗如画、清丽婉约的儿女情长，也有如山如海、气势磅礴的苍生大义；她代表了中国人关于剑的美丽梦想、代表了一场中国古代仙侠文化的盛宴、更代表了一个关于剑的东方传奇。</p>
+                    </div>
+                    <div class="card-action">
+                        <a>预约</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m7">
+            <div class="card horizontal">
+                <div class="card-image" style="margin: 22px;">
+                    <img src="img/item2.jpg" height="190" width="100"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h5 style="margin-top: 0;">东方帝王谷</h5>
+                        <p class="grey-text">视频</p>
+                        <p>
+                            该纪录片以陕西境内帝王陵、历史现场、文物为基本资源，探索一座座陵墓墓主的命运沉浮，一位位墓主背后的王朝兴衰，一个个王朝所演绎的文明成长。无论是周的礼乐文明、秦汉的制度文化，还是唐帝国的博大开放的气势、绵延后世的诗风舞韵，对中国的诞生与成长，均有着不可磨灭的影响。</p>
+                    </div>
+                    <div class="card-action">
+                        <a>预约</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

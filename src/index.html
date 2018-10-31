@@ -3,7 +3,7 @@
 <html lang="zh-cmn-Hans">
 <head>
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
     <script src="js/materialize.min.js"></script>
 
     <!--页面标题-->
@@ -33,14 +33,32 @@
         <img src="img/logo.jpg" height="140" width="360"/>
     </div>
     <!--搜索框-->
-    <div class="row">
+    <div class="row" style="margin-bottom: 0;">
         <div class="col s3"></div>
-        <div class="input-field col s6">
-            <input placeholder="      游戏/音乐/电影" id="search" type="text" class="validate">
+        <div class="input-field col s6" style="margin-bottom: 0;">
+            <input id="search" type="text" class="validate">
             <label class="label-icon" for="search">
                 <i class="material-icons" style="vertical-align:bottom">search</i></label>
         </div>
         <div class="col s3"></div>
+    </div>
+    <div class="row center" >
+        <form action="#">
+            <p style="margin-top: 5px;">
+                <label style="padding-right: 20px;">
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>游戏</span>
+                </label>
+                <label style="padding-right: 20px;">
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>音乐</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked"/>
+                    <span>视频</span>
+                </label>
+            </p>
+        </form>
     </div>
     <p class="center green-text">你的个人音像游乐园。
     <p>
