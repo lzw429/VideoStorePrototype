@@ -1,0 +1,96 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" type='text/css' href="css/materialize.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- 自定义css -->
+
+    <!--页面标题-->
+    <title>VideoStore Pro StockClerk</title>
+</head>
+<!-- Navigation bar -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s9">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+        <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+            <div class="collection" style="margin-top: 25px;">
+                <h2><a href="StockClerk.html" class="collection-item">进货单</a></h2>
+            </div>
+            <div class="modal-content">
+                    <table class="centered">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                            <th>Item Num</th>
+                            <th>Checked</th>
+                        </tr>
+                        </thead>
+        
+                        <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                            <td>87</td>
+                            <td><select class="browser-default">
+                                <option value="1" >未收货</option>
+                                <option value="2">已收货</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                            <td>457</td>
+                            <td><select class="browser-default">
+                                    <option value="1" >未收货</option>
+                                    <option value="2">已收货</option>
+                                    </select></td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                            <td>124</td>
+                            <td><select class="browser-default">
+                                    <option value="1" >未收货</option>
+                                    <option value="2">已收货</option>
+                                    </select></td>
+                        </tr>
+                        </tbody>
+        
+                    </table>
+                </div>
+            <div class="col right s11"><a class="waves-effect waves-light btn"><i class="material-icons left">done</i>确认</a></div>
+        </div>
+
+
+</body>
+</html>
