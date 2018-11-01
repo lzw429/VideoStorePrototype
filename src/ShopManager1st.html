@@ -51,8 +51,8 @@
             <a href="ShopManager1st.html" class="collection-item active">数据统计</a>
             <a href="ShopManager2nd.html" class="collection-item">用户需求</a>
             <a href="ShopManager3rd.html" class="collection-item">进货管理</a>
+            <a href="ShopManager5th.html" class="collection-item">支付记录</a>
             <a href="ShopManager4th.html" class="collection-item">搜索</a>
-            <a href="ShopManager5th.html" class="collection-item">查看缴费记录</a>
         </div>
 
     </div>
@@ -63,77 +63,77 @@
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('main'));
-    
+
             // 指定图表的配置项和数据
             var option = {
                 title: {
-        text: '数据信息统计图'
-    },
-    tooltip : {
-        trigger: 'axis',
-        axisPointer: {
-            type: 'cross',
-            label: {
-                backgroundColor: '#6a7985'
-            }
-        }
-    },
-    legend: {
-        data:['售量','租量','进货量','收入']
-    },
-    toolbox: {
-        feature: {
-            saveAsImage: {}
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis : [
-        {
-            type : 'category',
-            boundaryGap : false,
-            data : ['2018.1','2018.3','2018.5','2018.7','2018.9','2018.11','2018.12']
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value'
-        }
-    ],
-    series : [
-        {
-            name:'售量',
-            type:'line',
-            stack: '总量',
-            areaStyle: {},
-            data:[120, 132, 101, 134, 90, 230, 210]
-        },
-        {
-            name:'租量',
-            type:'line',
-            stack: '总量',
-            areaStyle: {},
-            data:[220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-            name:'进货量',
-            type:'line',
-            stack: '总量',
-            areaStyle: {},
-            data:[150, 232, 201, 154, 190, 330, 410]
-        },
-        {
-            name:'收入',
-            type:'line',
-            stack: '总量',
-            areaStyle: {normal: {}},
-            data:[1202, 1354, 1017, 1372, 1980, 1306, 1287]
-        },
-    ]
+                    text: '数据信息统计图'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'cross',
+                        label: {
+                            backgroundColor: '#6a7985'
+                        }
+                    }
+                },
+                legend: {
+                    data: ['售量', '租量', '进货量', '收入']
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: ['2018.1', '2018.3', '2018.5', '2018.7', '2018.9', '2018.11', '2018.12']
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: '售量',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: {},
+                        data: [120, 132, 101, 134, 90, 230, 210]
+                    },
+                    {
+                        name: '租量',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: {},
+                        data: [220, 182, 191, 234, 290, 330, 310]
+                    },
+                    {
+                        name: '进货量',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: {},
+                        data: [150, 232, 201, 154, 190, 330, 410]
+                    },
+                    {
+                        name: '收入',
+                        type: 'line',
+                        stack: '总量',
+                        areaStyle: {normal: {}},
+                        data: [1202, 1354, 1017, 1372, 1980, 1306, 1287]
+                    },
+                ]
             };
             // 使用刚指定的配置项和数据显示图表。
             myChart.setOption(option);
