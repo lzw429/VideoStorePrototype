@@ -20,12 +20,24 @@
 <!-- Navigation bar -->
 <nav>
     <div class="row nav-wrapper grey lighten-5 z-depth-0">
-        <div class="col s9">
+        <div class="col s3">
             <a class="brand-logo green-text" style="margin-left: 20px;">
                 <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
                      width="68"/>
                 <span style="vertical-align: middle;">VideoStore Pro</span>
             </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons"
+                           style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
         </div>
 
         <div class="col s3 black-text">
@@ -47,17 +59,17 @@
 
     <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
         <div class="collection" style="margin-top: 25px;">
-            <a href="ShopManager1st.html" class="collection-item">数据统计</a>
-            <a href="ShopManager2nd.html" class="collection-item">用户需求</a>
-            <a href="ShopManager3rd.html" class="collection-item active">进货管理</a>
-            <a href="ShopManager5th.html" class="collection-item">支付记录</a>
-            <a href="ShopManager4th.html" class="collection-item">搜索</a>
+            <a href="ShopManagerDataStatistics.html" class="collection-item">数据统计</a>
+            <a href="ShopManagerUserDemand.html" class="collection-item">用户需求</a>
+            <a href="ShopManagerPurchaseGoods.html" class="collection-item active">进货管理</a>
+            <a href="ShopManagerPayRecord.html" class="collection-item">支付记录</a>
+            <a href="ShopManagerSearchUserResult.html" class="collection-item">用户管理</a>
+            <a href="ShopManagerSearchGoodsResult.html" class="collection-item">商品管理</a>
         </div>
     </div>
 
     <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
-        <h4>进货管理</h4>
-
+        <h4>进货</h4>
         <div class="modal-content">
             <table class="centered">
                 <thead>
@@ -77,9 +89,9 @@
                     <td>$0.87</td>
                     <td>87</td>
                     <td><select class="browser-default">
-                        <option value="1" >未收货</option>
+                        <option value="1">未收货</option>
                         <option value="2">已收货</option>
-                        </select></td>
+                    </select></td>
                 </tr>
                 <tr>
                     <td>Alan</td>
@@ -87,9 +99,9 @@
                     <td>$3.76</td>
                     <td>457</td>
                     <td><select class="browser-default">
-                            <option value="1" >未收货</option>
-                            <option value="2">已收货</option>
-                            </select></td>
+                        <option value="1">未收货</option>
+                        <option value="2">已收货</option>
+                    </select></td>
                 </tr>
                 <tr>
                     <td>Jonathan</td>
@@ -97,15 +109,15 @@
                     <td>$7.00</td>
                     <td>124</td>
                     <td><select class="browser-default">
-                            <option value="1" >未收货</option>
-                            <option value="2">已收货</option>
-                            </select></td>
+                        <option value="1">未收货</option>
+                        <option value="2">已收货</option>
+                    </select></td>
                 </tr>
                 </tbody>
 
             </table>
         </div>
-        
+
         <h5>总额：$ 249,229.3856</h5>
     </div>
 </div>

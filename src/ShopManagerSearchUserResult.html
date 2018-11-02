@@ -1,0 +1,196 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/materialize.min.js"></script>
+
+    <!--页面标题-->
+    <title>用户 - VideoStore Pro</title>
+</head>
+
+<body>
+<!-- 导航栏 -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s3">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons"
+                           style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--页面内容 两栏布局-->
+<div class="row">
+    <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <!--页面左侧-->
+        <div class="collection" style="margin-top: 25px;">
+            <a href="ShopManagerDataStatistics.html" class="collection-item">数据统计</a>
+            <a href="ShopManagerUserDemand.html" class="collection-item">用户需求</a>
+            <a href="ShopManagerPurchaseGoods.html" class="collection-item">进货管理</a>
+            <a href="ShopManagerPayRecord.html" class="collection-item">支付记录</a>
+            <a href="ShopManagerSearchUserResult.html" class="collection-item active">用户管理</a>
+            <a href="ShopManagerSearchGoodsResult.html" class="collection-item">商品管理</a>
+        </div>
+    </div>
+
+    <div class="col s12 m8 l9" >
+        <!-- Note that " m8 l9" was added -->
+        <!--页面右侧-->
+        <h4>用户</h4>
+        <table>
+            <thead>
+            <tr>
+                <th>姓名</th>
+                <th>手机号</th>
+                <th>类型</th>
+                <th>购买</th>
+                <th>租用</th>
+                <th>支付</th>
+                <th>余额</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>黄昱志</td>
+                <td>13930646463</td>
+                <td>普通</td>
+                <td>29 件</td>
+                <td>27 件次</td>
+                <td><a>¥ 546.00</a></td>
+                <td>¥ 57.00</td>
+            </tr>
+            <tr>
+                <td>胡淳刚</td>
+                <td>13986232051</td>
+                <td>普通</td>
+                <td>0 件</td>
+                <td>39 件次</td>
+                <td><a>¥ 761.00</a></td>
+                <td>¥ 28.00</td>
+            </tr>
+            <tr>
+                <td>邱兰天</td>
+                <td>13962575597</td>
+                <td class="red-text">VIP</td>
+                <td>40 件</td>
+                <td>84 件次</td>
+                <td><a>¥ 943.00</a></td>
+                <td>¥ 272.00</td>
+            </tr>
+            <tr>
+                <td>萧雅韦</td>
+                <td>13985560710</td>
+                <td>普通</td>
+                <td>30 件</td>
+                <td>59 件次</td>
+                <td><a>¥ 207.00</a></td>
+                <td>¥ 180.00</td>
+            </tr>
+            <tr>
+                <td>陈玮玲</td>
+                <td>13938643420</td>
+                <td class="red-text">VIP</td>
+                <td>10 件</td>
+                <td>25 件次</td>
+                <td><a>¥ 76.00</a></td>
+                <td>¥ 48.00</td>
+            </tr>
+            <tr>
+                <td>林凯婷</td>
+                <td>13970428534</td>
+                <td class="red-text">VIP</td>
+                <td>12 件</td>
+                <td>70 件次</td>
+                <td><a>¥ 235.00</a></td>
+                <td>¥ 140.00</td>
+            </tr>
+            <tr>
+                <td>吴先璇</td>
+                <td>13997444334</td>
+                <td class="red-text">VIP</td>
+                <td>47 件</td>
+                <td>24 件次</td>
+                <td><a>¥ 526.00</a></td>
+                <td>¥ 264.00</td>
+            </tr>
+            <tr>
+                <td>杨咏纶</td>
+                <td>13949276233</td>
+                <td>普通</td>
+                <td>40 件</td>
+                <td>62 件次</td>
+                <td><a>¥ 83.00</a></td>
+                <td>¥ 15.00</td>
+            </tr>
+            <tr>
+                <td>赖湘胤</td>
+                <td>13942423267</td>
+                <td>普通</td>
+                <td>16 件</td>
+                <td>82 件次</td>
+                <td><a>¥ 442.00</a></td>
+                <td>¥ 112.00</td>
+            </tr>
+            <tr>
+                <td>林志杰</td>
+                <td>13973403917</td>
+                <td class="red-text">VIP</td>
+                <td>11 件</td>
+                <td>80 件次</td>
+                <td><a>¥ 457.00</a></td>
+                <td>¥ 53.00</td>
+            </tr>
+            <tr>
+                <td>陈丽君</td>
+                <td>13926604033</td>
+                <td class="red-text">VIP</td>
+                <td>29 件</td>
+                <td>55 件次</td>
+                <td><a>¥ 176.00</a></td>
+                <td>¥ 82.00</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
