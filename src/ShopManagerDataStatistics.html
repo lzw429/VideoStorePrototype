@@ -71,7 +71,15 @@
 
     <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
         <h4>数据统计</h4>
-        <div id="main" style="width:1000px;height:800px;"></div>
+        <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s3"><a class="active" href="#main">7 天</a></li>
+            <li class="tab col s3"><a>1 个月</a></li>
+            <li class="tab col s3"><a>3 个月</a></li>
+            <li class="tab col s3"><a>6 个月</a></li>
+        </ul>
+        <div id="main" style="width:980px;height:450px;">
+            <!-- 用于echarts -->
+        </div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('main'));
@@ -79,7 +87,7 @@
             // 指定图表的配置项和数据
             var option = {
                 title: {
-                    text: '数据信息统计图'
+                    text: '最近7天'
                 },
                 tooltip: {
                     trigger: 'axis',
@@ -91,7 +99,7 @@
                     }
                 },
                 legend: {
-                    data: ['售量', '租量', '进货量', '收入']
+                    data: ['销售（件）', '租借（件次）', '进货（件）', '收入（元）']
                 },
                 toolbox: {
                     feature: {
@@ -108,7 +116,7 @@
                     {
                         type: 'category',
                         boundaryGap: false,
-                        data: ['2018.1', '2018.3', '2018.5', '2018.7', '2018.9', '2018.11', '2018.12']
+                        data: ['10.29', '10.30', '10.31', '11.1', '11.2', '11.3', '11.4']
                     }
                 ],
                 yAxis: [
@@ -118,28 +126,28 @@
                 ],
                 series: [
                     {
-                        name: '售量',
+                        name: '销售（件）',
                         type: 'line',
                         stack: '总量',
                         areaStyle: {},
                         data: [120, 132, 101, 134, 90, 230, 210]
                     },
                     {
-                        name: '租量',
+                        name: '租借（件次）',
                         type: 'line',
                         stack: '总量',
                         areaStyle: {},
                         data: [220, 182, 191, 234, 290, 330, 310]
                     },
                     {
-                        name: '进货量',
+                        name: '进货（件）',
                         type: 'line',
                         stack: '总量',
                         areaStyle: {},
                         data: [150, 232, 201, 154, 190, 330, 410]
                     },
                     {
-                        name: '收入',
+                        name: '收入（元）',
                         type: 'line',
                         stack: '总量',
                         areaStyle: {normal: {}},
@@ -152,8 +160,6 @@
         </script>
     </div>
 </div>
-
-
 </body>
 <script>
     $(document).ready(function () {

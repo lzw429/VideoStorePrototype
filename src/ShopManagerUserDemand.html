@@ -69,13 +69,16 @@
 
     <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
         <h4>用户需求</h4>
+        <button class="btn" style="float: right;">提交进货</button>
+        <button class="btn orange" style="float: right;margin-right: 20px;">按需重置</button>
         <table>
             <thead>
             <tr>
                 <th>编号</th>
                 <th>名称</th>
                 <th>单价</th>
-                <th>申请数量</th>
+                <th>申请数</th>
+                <th>进货</th>
             </tr>
             </thead>
             <tbody>
@@ -84,19 +87,33 @@
                 <td>古剑奇谭</td>
                 <td>¥ 19.00</td>
                 <td>2</td>
-
+                <td style="width: 60px;">
+                    <label>
+                        <input style="width: 50px; height: 20px;" value="2"/>
+                    </label>
+                </td>
             </tr>
             <tr>
                 <td>M201614199</td>
                 <td>广陵散</td>
                 <td>¥ 3.00</td>
                 <td>1</td>
+                <td style="width: 60px;">
+                    <label>
+                        <input style="width: 50px; height: 20px;" value="1"/>
+                    </label>
+                </td>
             </tr>
             <tr>
                 <td>V201710288</td>
                 <td>东方帝王谷</td>
                 <td>¥ 25.00</td>
                 <td>1</td>
+                <td style="width: 60px;">
+                    <label>
+                        <input style="width: 50px; height: 20px;" value="1"/>
+                    </label>
+                </td>
             </tr>
             </tbody>
         </table>
