@@ -16,7 +16,7 @@
     </style>
 
     <!--页面标题-->
-    <title>管理 - VideoStore Pro</title>
+    <title>注册 - VideoStore Pro</title>
 </head>
 
 <!-- Navigation bar -->
@@ -34,11 +34,12 @@
         <div class="nav-wrapper col s6 center" style="padding: 5px">
             <form>
                 <div class="input-field white z-depth-1">
-                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required/>
                     <label class="label-icon" for="search">
                         <i class="material-icons"
                            style="vertical-align:bottom">search</i>
-                    </label></div>
+                    </label>
+                </div>
             </form>
         </div>
 
@@ -59,14 +60,19 @@
         <h5>你的个人音像游乐园。</h5>
     </div>
     <div class="col s5">
-        <form id="form" action="UserServlet" method="post">
+        <form id="form">
             <div class="input-field col s12">
-                <input id="username" name="username" type="text" class="validate">
-                <label for="username">用户名：6~20 位</label>
+                <input id="username" name="username" type="text" class="validate" style="width: 230px;">
+                <label for="username">手机号</label>
+                <button class="btn" style="display: inline;">发送验证码</button>
             </div>
             <div class="input-field col s12">
                 <input id="nickname" name="nickname" type="text" class="validate">
-                <label for="nickname">昵称</label>
+                <label for="nickname">姓名</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="verification" name="verification" type="text" class="validate">
+                <label for="verification">验证码</label>
             </div>
             <div class="input-field col s12">
                 <input id="password" name="password" type="password" class="validate">
