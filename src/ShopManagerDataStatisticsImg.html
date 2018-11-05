@@ -1,0 +1,109 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" type='text/css' href="css/materialize.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+
+    <!-- 自定义css -->
+    <style type="text/css">
+        .s6 {
+            height: 200px;
+        }
+    </style>
+
+    <!--页面标题-->
+    <title>管理 - VideoStore Pro</title>
+</head>
+<!-- Navigation bar -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s3">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons"
+                           style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+<div class="row">
+
+    <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <div class="collection" style="margin-top: 25px;">
+            <a href="ShopManagerDataStatistics.html" class="collection-item active">数据统计</a>
+            <a href="ShopManagerUserDemand.html" class="collection-item">用户需求</a>
+            <a href="ShopManagerPurchaseGoods.html" class="collection-item">进货管理</a>
+            <a href="ShopManagerPayRecord.html" class="collection-item">支付记录</a>
+            <a href="ShopManagerSearchUserResult.html" class="collection-item">用户管理</a>
+            <a href="ShopManagerSearchGoodsResult.html" class="collection-item">商品管理</a>
+        </div>
+    </div>
+
+    <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+        <h4>数据统计</h4>
+        <p>以堆叠区域图展示近期经营数据。</p>
+        <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s3"><a class="active" href="">7 天</a></li>
+            <li class="tab col s3"><a href="">1 个月</a></li>
+            <li class="tab col s3"><a href="">3 个月</a></li>
+            <li class="tab col s3"><a href="">6 个月</a></li>
+        </ul>
+        <div id="graph1" style="width:980px; height:450px; margin-top: 10px;">
+            <!-- 销售量、租借量、进货量 -->
+            <!-- 用于 echarts -->
+            <img src="img/最近7天商品流动.png" height="450" width="980"/>
+        </div>
+        <div id="graph2" style="width:980px; height:450px; margin-top: 30px;">
+            <!-- 收入与支出 -->
+            <!-- 用于 echarts -->
+            <img src="img/最近7天收入支出.png" height="450" width="980"/>
+        </div>
+        <div id="graph3" style="width:980px; height:450px; margin-top: 30px;">
+            <!-- 销售收入与租借收入 -->
+            <!-- 用于 echarts -->
+            <img src="img/最近7天收入分析.png" height="450" width="980"/>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+</script>
+
+</html>
