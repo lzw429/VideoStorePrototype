@@ -1,0 +1,115 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+
+<head>
+    <!-- 修改引入顺序需谨慎 -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!--页面标题-->
+    <title>预约 - VideoStore Pro</title>
+</head>
+
+
+<!-- 导航栏 -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s3">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40" width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons" style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+<div class="container" style="margin-top: 15px;">
+    <h4 style="display: inline;">预约</h4>
+    <button style="display: inline; margin-left: 20px;" class="btn">返回</button>
+
+    <h5>未提货</h5>
+    <table>
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>顾客姓名</th>
+            <th>顾客手机号</th>
+            <th>预约时间</th>
+            <th>预约数量</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>G201809488</td>
+            <td>古剑奇谭</td>
+            <td>胡淳刚</td>
+            <td>13986232051</td>
+            <td>2018-09-11 09:41:23</td>
+            <td>2</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h5>已提货</h5>
+    <table>
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>顾客姓名</th>
+            <th>顾客手机号</th>
+            <th>预约时间</th>
+            <th>预约数量</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>M201614199</td>
+            <td>广陵散</td>
+            <td>邱兰天</td>
+            <td>13962575597</td>
+            <td>2018-10-12 12:48:39</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>V201710288</td>
+            <td>东方帝王谷</td>
+            <td>萧雅韦</td>
+            <td>13985560710</td>
+            <td>2018-11-07 08:23:47</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
