@@ -1,0 +1,130 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/MaterialIcons.css">
+    <script src="js/materialize.min.js"></script>
+
+    <!--页面标题-->
+    <title>供货商 - VideoStore Pro</title>
+</head>
+
+<body>
+<!-- 导航栏 -->
+<nav>
+    <div class="row nav-wrapper grey lighten-5 z-depth-0">
+        <div class="col s3">
+            <a class="brand-logo green-text" style="margin-left: 20px;">
+                <img style="vertical-align:middle;" src="img/logo_small.jpg" height="40"
+                     width="68"/>
+                <span style="vertical-align: middle;">VideoStore Pro</span>
+            </a>
+        </div>
+
+        <!--搜索框-->
+        <div class="nav-wrapper col s6 center" style="padding: 5px">
+            <form>
+                <div class="input-field white z-depth-1">
+                    <input id="search" type="search" name="keywords" placeholder="搜索" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons"
+                           style="vertical-align:bottom">search</i>
+                    </label></div>
+            </form>
+        </div>
+
+        <div class="col s3 black-text">
+            <ul class="right hide-on-med-and-down" style="padding-right: 30px;">
+                <li style="display: inline; padding-right: 10px;">
+                    <i class="material-icons">notifications</i>
+                </li>
+                <li style="display: inline;">
+                    <i class="material-icons">person</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--页面内容 两栏布局-->
+<div class="row">
+    <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <!--页面左侧-->
+        <div class="collection" style="margin-top: 25px;">
+            <a href="ShopManagerDataStatistics.html" class="collection-item">数据统计</a>
+            <a href="ShopManagerUserDemand.html" class="collection-item">用户需求</a>
+            <a href="ShopManagerPurchaseGoods.html" class="collection-item">进货管理</a>
+            <a href="ShopManagerPayRecord.html" class="collection-item">支付记录</a>
+            <a href="ShopManagerSearchUserResult.html" class="collection-item">用户管理</a>
+            <a href="ShopManagerSearchGoodsResult.html" class="collection-item">商品管理</a>
+            <a href="ShopManagerSupplier.html" class="collection-item active">供货商</a>
+        </div>
+    </div>
+
+    <div class="col s12 m8 l9">
+        <!-- Note that " m8 l9" was added -->
+        <!--页面右侧-->
+        <h4>供货商</h4>
+        <p>共 3 家供货商</p>
+        <button class="btn blue" style="margin-right: 20px;">新增</button>
+        <button class="btn blue" style="margin-right: 20px;">编辑</button>
+        <button class="btn red">删除</button>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>名称</th>
+                <th>地址</th>
+                <th>联系人</th>
+                <th>联系电话</th>
+                <th>链接</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
+                </td>
+                <td>小象影视</td>
+                <td>章江南路18号豪德银座B座</td>
+                <td>刘德红</td>
+                <td>13953550059</td>
+                <td><a>已设置</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
+                </td>
+                <td>21世纪福克斯</td>
+                <td>东山南路与金山路交叉口</td>
+                <td>夏粮豫</td>
+                <td>13976468918</td>
+                <td><a>已设置</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
+                </td>
+                <td>娱乐宝</td>
+                <td>经济技术开发区迎宾大道2号</td>
+                <td>刘国聪</td>
+                <td>13902476114</td>
+                <td><a>已设置</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

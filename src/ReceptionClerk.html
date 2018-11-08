@@ -56,7 +56,8 @@
         <a class="btn center modal-trigger" href="#sell_modal">出售</a>
         <a class="btn center modal-trigger" href="#lend_modal">租借</a>
         <a class="btn center modal-trigger" href="#return_modal">归还</a>
-        <a class="btn center modal-trigger" href="#recharge_modal">充值</a>
+        <a class="btn center modal-trigger" href="#sales_return_modal">退货</a>
+        <a class="btn center modal-trigger blue" href="#recharge_modal">充值</a>
     </div>
     <table class="highlight responsive-table">
         <thead>
@@ -311,6 +312,54 @@
             <div class="center" style="margin-top: 20px;">
                 <img src="img/wechat_pay_3.jpg" height="200" width="220"/>
             </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat">返回</a>
+            <a class="modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+
+    <!--退货 模态框-->
+    <div id="sales_return_modal" class="modal">
+        <div class="modal-content">
+            <h4>退货</h4>
+            <p>请注意：退货前请确认包装完好，或确认产品质量存在问题。</p>
+            <p>购买超过 7 天无法退货。</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>售出</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>G201809488</td>
+                    <td>古剑奇谭</td>
+                    <td>¥ 19.00</td>
+                    <td>2</td>
+                    <td>3 天</td>
+                </tr>
+                <tr>
+                    <td>M201614199</td>
+                    <td>广陵散</td>
+                    <td>¥ 3.00</td>
+                    <td>1</td>
+                    <td>4 天</td>
+                </tr>
+                <tr>
+                    <td>V201710288</td>
+                    <td>东方帝王谷</td>
+                    <td>¥ 25.00</td>
+                    <td>1</td>
+                    <td>5 天</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5>退款总额：¥ 66.00</h5>
         </div>
         <div class="modal-footer">
             <a class="modal-close waves-effect waves-green btn-flat">返回</a>

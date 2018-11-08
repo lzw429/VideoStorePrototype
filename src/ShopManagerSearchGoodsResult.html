@@ -69,14 +69,17 @@
 
     <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
         <h4>商品</h4>
-        <button class="btn" style="float: right;">提交进货</button>
-        <button class="btn orange" style="float: right;margin-right: 20px;">重置</button>
+        <button class="btn modal-trigger" style="float: right;" href="#purchase_modal">提交进货</button>
+        <button class="btn orange" style="float: right; margin-right: 20px;">重置</button>
         <table>
             <thead>
             <tr>
                 <th>编号</th>
                 <th>ISBN</th>
                 <th>名称</th>
+                <th>发行商</th>
+                <th>发行日期</th>
+                <th>主创</th>
                 <th>类型</th>
                 <th>售出</th>
                 <th>租借</th>
@@ -90,6 +93,9 @@
                 <td>G201809488</td>
                 <td>978-1-56581-231-4 52250</td>
                 <td>古剑奇谭</td>
+                <td>上海烛龙信息科技有限公司</td>
+                <td>2016-03-27</td>
+                <td>张毅君</td>
                 <td><i class="material-icons">videogame_asset</i></td>
                 <td><a>27 件</a></td>
                 <td><a>87 件次</a></td>
@@ -100,6 +106,9 @@
                 <td>M201614199</td>
                 <td>978-1-56581-231-4 23284</td>
                 <td>广陵散</td>
+                <td>华夏民族乐团</td>
+                <td>2015-04-29</td>
+                <td>嵇康</td>
                 <td><i class="material-icons">music_note</i></td>
                 <td><a>30 件</a></td>
                 <td><a>69 件次</a></td>
@@ -110,6 +119,9 @@
                 <td>V201710288</td>
                 <td>978-1-56581-231-4 83294</td>
                 <td>东方帝王谷</td>
+                <td>陕文投集团</td>
+                <td>2015-06-07</td>
+                <td>聂辰席</td>
                 <td><i class="material-icons">ondemand_video</i></td>
                 <td><a>52 件</a></td>
                 <td><a>62 件次</a></td>
@@ -118,6 +130,56 @@
             </tr>
             </tbody>
         </table>
+    </div>
+
+    <!--选择供货商 模态框-->
+    <div id="purchase_modal" class="modal">
+        <div class="modal-content">
+            <h4>进货</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>地址</th>
+                    <th>进货价</th>
+                    <th>可进货数</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>小象影视</td>
+                    <td>章江南路18号豪德银座B座</td>
+                    <td>¥ 19.00</td>
+                    <td>18</td>
+                    <td>
+                        <button class="btn">选择</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>21世纪福克斯</td>
+                    <td>东山南路与金山路交叉口</td>
+                    <td>¥ 19.50</td>
+                    <td>6</td>
+                    <td>
+                        <button class="btn">选择</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>娱乐宝</td>
+                    <td>经济技术开发区迎宾大道2号</td>
+                    <td>¥ 18.50</td>
+                    <td>26</td>
+                    <td>
+                        <button class="btn">选择</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">返回</a>
+        </div>
     </div>
 </div>
 
